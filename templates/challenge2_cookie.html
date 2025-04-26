@@ -2,14 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Challenge 2</title>
+  <title>Challenge 2 - Cookie Hunt 🍪</title>
   <link rel="stylesheet" href="../static/style.css">
-  <script>document.cookie = "flag=FLAG{cookie_monster}";</script>
+  <style>
+    body {
+      background: linear-gradient(135deg, #ffe53b, #ff6f91);
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background: #fff;
+      padding: 2rem 3rem;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    }
+    h1 {
+      color: #333;
+    }
+    p {
+      font-size: 1.1rem;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
     <h1>CTF Challenge 2</h1>
-    <p>Inspect your cookies carefully 🍪</p>
+    <p>Something smells like cookies... 🍪</p>
   </div>
+
+  <script>
+    // Obfuscated flag: "FLAG{cookie_monster}"
+    const hexFlag = "464c41477b636f6f6b69655f6d6f6e737465727d"; // hex encoded
+
+    // Set it as a cookie
+    document.cookie = "flag=" + hexFlag;
+  </script>
 </body>
 </html>
